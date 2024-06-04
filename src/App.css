@@ -1,0 +1,216 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 24px;
+	}
+
+	.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+	}
+
+	.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+	-webkit-transition: .4s;
+	transition: .4s; 
+	}
+
+	.slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3.5px;
+	bottom: 3px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+	}
+	
+
+	input:checked + .slider {
+    background: hsl(236, 72%, 84%);
+	}
+
+	input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(21px);
+	}
+
+	.slider.round {
+	border-radius: 34px;
+	}
+
+	.slider.round:before {
+	border-radius: 50%;
+	}
+  main {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  main > h1 {
+    color: hsl(232, 13%, 33%);
+    margin-bottom: 30px;
+  }
+  body {
+    background-color: hsl(240, 78%, 98%);
+    align-items: center;
+  }
+  div.switch {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-bottom: 50px;
+  }
+  div.switch p {
+    color: hsl(234, 14%, 74%);
+    font-size: 15px;
+  }
+  div.all section {
+    display: flex;
+    width: 70%;
+  }
+  div.all section article {
+    width: 35%;
+    border-radius: 10px;
+  }
+  div.all section article > div {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  div.all section article > div p {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  div.all section article h1{
+    font-size: 3.7rem;
+  }
+  div.all section article div {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+  div.all section article > p {
+    font-size: 15px;
+  }
+  div.all section article ul li {
+    font-size: 12px;
+    margin: 10px 0px;
+  }
+  div.all section article.first:nth-child(1) {
+    border-radius: 10px 0px 0px 10px;
+  }
+  div.all section article.first {
+    background-color: #fff;
+    padding: 30px 0px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  div.all section article.first button {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+  }
+  div.all section article.first button:hover {
+    background: transparent;
+    cursor: pointer;
+    color: hsl(237, 63%, 64%);
+    border: 1px solid  hsl(237, 63%, 64%);
+  }
+  div.all section article.first ul li {
+    color: hsl(232, 13%, 33%);
+  }
+  div.all section article.first > p {
+    color: hsl(232, 13%, 33%);
+  }
+  div.all section article.first > div p {
+    color: hsl(232, 13%, 33%);
+  }
+  div.all section article.first h1 {
+    color: hsl(232, 13%, 33%);
+  }
+  div.all section article.second {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    padding: 50px 0px;
+  }
+  div.all section article.second button {
+    background-color: #fff;
+    color: hsl(237, 63%, 64%);
+  }
+  div.all section article.second button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  div.all section article.second ul li {
+    color: #fff;
+  }
+  div.all section article.second > p {
+    color: #fff;
+  }
+  div.all section article.second > div p{
+    color: #fff;
+  } 
+  div.all section article.second h1 {
+    color: #fff;
+  }
+  hr {
+    width: 85%;
+    color: #fff;
+    border-color: #fff;
+    border-bottom: none;
+    height: 0.1px;
+  }
+  li {
+    list-style-type: none;
+  }
+  button {
+    width: 85%;
+    margin-top: 25px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 850px) {
+    main {
+      margin-bottom: 60px;
+    }
+    div.all section {
+      display: block;
+      width: 100%;
+    }
+    div.all section article {
+      width: 90%;
+      margin-top: 30px;
+    }
+    div.all section article.first, div.all section article.first:nth-child(1) {
+      border-radius: 10px;
+    }
+    div.switch {
+      width: 70%;
+    }
+  }
